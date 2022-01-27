@@ -4,18 +4,19 @@
   <meta charset="utf-8">
   
   
-  <title>Hello World | Hexo</title>
+  <title>Docker 介绍(一) | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://example.com/hello-world.html">
+  <meta name="description" content="关于Docker首先Docker是一个开源的应用容器引擎,可以将应用程序和依赖打包到一个可移植的容器中,然后发布到Linux服务器,可用于实现虚拟化.容器与其他容器共享内核,作为独立的进程在主机操作系统的用户空间中运行。 github&amp;nbsp;&amp;nbsp;官方介绍 概念 容器(container) 相当于一个轻量的主机,应用程序和其依赖都在其中 镜像(image) 容器的模板文件,相当于容器的安">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Docker 介绍(一)">
+<meta property="og:url" content="http://example.com/2017/01/09/docker/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="关于Docker首先Docker是一个开源的应用容器引擎,可以将应用程序和依赖打包到一个可移植的容器中,然后发布到Linux服务器,可用于实现虚拟化.容器与其他容器共享内核,作为独立的进程在主机操作系统的用户空间中运行。 github&amp;nbsp;&amp;nbsp;官方介绍 概念 容器(container) 相当于一个轻量的主机,应用程序和其依赖都在其中 镜像(image) 容器的模板文件,相当于容器的安">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2016-04-16T16:00:00.000Z">
-<meta property="article:modified_time" content="2022-01-27T07:49:50.159Z">
+<meta property="article:published_time" content="2017-01-09T07:13:41.000Z">
+<meta property="article:modified_time" content="2022-01-27T07:49:50.164Z">
 <meta property="article:author" content="yangkui">
+<meta property="article:tag" content="docker">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
@@ -77,12 +78,16 @@
 </header>
 
       <div class="outer">
-        <section id="main"><article id="page-" class="h-entry article article-type-page" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-docker" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/hello-world.html" class="article-date">
-  <time class="dt-published" datetime="2016-04-16T16:00:00.000Z" itemprop="datePublished">2016-04-17</time>
+    <a href="/2017/01/09/docker/" class="article-date">
+  <time class="dt-published" datetime="2017-01-09T07:13:41.000Z" itemprop="datePublished">2017-01-09</time>
 </a>
     
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/docker/">docker</a>
+  </div>
+
   </div>
   <div class="article-inner">
     
@@ -91,7 +96,7 @@
         
   
     <h1 class="p-name article-title" itemprop="headline name">
-      Hello World
+      Docker 介绍(一)
     </h1>
   
 
@@ -99,31 +104,59 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+        <h5 id="关于Docker"><a href="#关于Docker" class="headerlink" title="关于Docker"></a>关于Docker</h5><p>首先Docker是一个开源的应用容器引擎,可以将应用程序和依赖打包到一个可移植的容器中,然后发布到Linux服务器,可用于实现虚拟化.<br>容器与其他容器共享内核,作为独立的进程在主机操作系统的用户空间中运行。</p>
+<p><a target="_blank" rel="noopener" href="https://github.com/docker/docker">github</a>&nbsp;&nbsp;<br><a target="_blank" rel="noopener" href="https://www.docker.com/what-docker">官方介绍</a></p>
+<h6 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h6><ul>
+<li>容器(container) 相当于一个轻量的主机,应用程序和其依赖都在其中</li>
+<li>镜像(image) 容器的模板文件,相当于容器的安装文件</li>
+<li>仓库(repository) 镜像的版本管理库,类似Git,<a target="_blank" rel="noopener" href="https://hub.docker.com/">官方镜像库</a></li>
+<li>Dockerfile 用于构建镜像,主要描述镜像构建过程和容器启动时的命令</li>
+</ul>
+<h6 id="安装docker-Ubuntu"><a href="#安装docker-Ubuntu" class="headerlink" title="安装docker(Ubuntu)"></a>安装docker(Ubuntu)</h6><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt install docker.io</span><br></pre></td></tr></table></figure>
+<h6 id="运行第一个镜像"><a href="#运行第一个镜像" class="headerlink" title="运行第一个镜像"></a>运行第一个镜像</h6><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">docker run -it ubuntu <span class="built_in">echo</span> <span class="string">&quot;hello world&quot;</span></span><br><span class="line">&gt;hello world</span><br></pre></td></tr></table></figure>
+<p>在第一次运行的过程中,Docker engine会根据镜像名称(这里我使用的Ubuntu)和tag(默认为latest,即最新版)在本地寻找镜像,如果没有则向远程仓库中寻找并pull到本地,然后启动此镜像</p>
+<h6 id="根据自己程序自定义镜像"><a href="#根据自己程序自定义镜像" class="headerlink" title="根据自己程序自定义镜像"></a>根据自己程序自定义镜像</h6><p>自定义镜像主要依赖于Dockerfile和docker-compose.yaml(可选)</p>
+<p>一个简单的Dockerfile 文件如下</p>
+<figure class="highlight dockerfile"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">FROM</span> nginx <span class="comment">#父镜像</span></span><br><span class="line"><span class="keyword">COPY</span><span class="bash"> ./ /usr/share/nginx/html/ <span class="comment">#拷贝Dockerfile 所在的目录下的内容到容器中的目录</span></span></span><br><span class="line"><span class="keyword">EXPOSE</span> <span class="number">80</span> <span class="comment">#对主机暴露的端口</span></span><br><span class="line"><span class="keyword">CMD</span><span class="bash"> [<span class="string">&quot;nginx&quot;</span>, <span class="string">&quot;-g&quot;</span>, <span class="string">&quot;daemon off;&quot;</span>] <span class="comment">#启动时执行的指令</span></span></span><br></pre></td></tr></table></figure>
+<p>根据Dockerfile 构建镜像</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ docker build -f /path/to/a/Dockerfile .</span><br></pre></td></tr></table></figure>
+<p>关于Dockerfile的详细介绍请见：<a target="_blank" rel="noopener" href="https://docs.docker.com/engine/reference/builder/">传送门</a></p>
+<p>推送镜像到Docker Hub或是其他远程镜像库</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ docker push yourname/newimage</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/deployment.html">Deployment</a></p>
-
+<h6 id="未完待续"><a href="#未完待续" class="headerlink" title="未完待续"></a>未完待续</h6>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/hello-world.html" data-id="ckywpi3yv0002hn7u5vashidl" data-title="Hello World" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2017/01/09/docker/" data-id="ckywpnonn0000of7u0mjk84uq" data-title="Docker 介绍(一)" class="article-share-link">Share</a>
       
       
       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/docker/" rel="tag">docker</a></li></ul>
+
     </footer>
   </div>
   
     
+<nav id="article-nav">
+  
+    <a href="/2017/02/24/pop_mode_of_jd/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          京东POP平台模式
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2016/11/18/jmqStudy/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">京东JMQ的学习(1)</div>
+    </a>
+  
+</nav>
+
   
 </article>
 
